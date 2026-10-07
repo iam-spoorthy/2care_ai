@@ -1,0 +1,32 @@
+{
+  "name": "2Care Clinic",
+  "booking_window_days": 14,
+  "providers": [
+    {
+      "id": "dr_iyer",
+      "name": "Dr. Iyer",
+      "specialty": "General medicine",
+      "weekdays": ["mon", "tue", "wed", "thu", "fri"],
+      "hours": [["09:00", "12:00"], ["14:00", "17:00"]],
+      "slot_minutes": 30
+    },
+    {
+      "id": "dr_shah",
+      "name": "Dr. Shah",
+      "specialty": "Cardiology",
+      "weekdays": ["tue", "thu"],
+      "hours": [["10:00", "13:00"]],
+      "slot_minutes": 30
+    }
+  ],
+  "patients": [
+    {"id": "P001", "first_name": "Ananya", "last_name": "Rao", "phone": "9848012345", "dob": "1994-03-12"},
+    {"id": "P002", "first_name": "Meera", "last_name": "Rao", "phone": "9848012345", "dob": "1988-11-02"},
+    {"id": "P003", "first_name": "Ravi", "last_name": "Kumar", "phone": "9900099000", "dob": "1975-01-20"},
+    {"id": "P004", "first_name": "Karthik", "last_name": "Menon", "phone": "9811111111", "dob": "1990-07-07"}
+  ],
+  "appointments": [
+    {"patient_id": "P003", "provider_id": "dr_iyer", "weekday": "thu", "time": "14:00", "reason": "follow-up"},
+    {"patient_id": "P001", "provider_id": "dr_iyer", "weekday": "fri", "time": "10:00", "reason": "follow-up"}
+  ]
+}
